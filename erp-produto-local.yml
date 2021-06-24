@@ -30,11 +30,11 @@ management:
   endpoints:
     jmx:
       exposure:
-        include: *
+        include: "*"
     web:
       exposure:
-        include: *
-    base-path: /actuator
+        include: "*"
+    base-path: "/actuator"
     cors:
       allowed-origins: true
     enabled-by-default: false
