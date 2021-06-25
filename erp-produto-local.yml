@@ -1,7 +1,7 @@
 spring:
   # Database
   datasource:
-    url: jdbc:postgresql://localhost:5432/erp-produto_db
+    url: jdbc:postgresql://localhost:5432/produto
     username: postgres
     password: postgres
     driverClassName: org.postgresql.Driver
