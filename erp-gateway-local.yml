@@ -37,4 +37,4 @@ management:
     base-path: "/actuator"
     cors:
       allowed-origins: true
-    enabled-by-default: false
+    enabled-by-default: true
