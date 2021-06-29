@@ -6,7 +6,7 @@ spring:
     gateway:
       routes:
         - id: produto
-          uri: lb://ERP-PRODUTO
+          uri: lb://erp-produto
         predicates:
           - Path=/produtos/**
 eureka:
