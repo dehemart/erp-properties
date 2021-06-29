@@ -5,10 +5,10 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: produtos
+      - id: produtos
           uri: lb://erp-produto
           predicates:
-            - Path=/produtos/**
+          - Path=/produtos/**
 eureka:
   client:
     serviceUrl:
