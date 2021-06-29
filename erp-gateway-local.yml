@@ -7,7 +7,8 @@ spring:
       routes:
       - id: produtos
         uri: lb://erp-produto
-
+        predicates:
+        - Method=GET,POST,PUT
 eureka:
   client:
     serviceUrl:
