@@ -4,16 +4,22 @@ server:
 spring:
   cloud:
     gateway:
+      discovery:
+        locator:
+          enabled: true
+#          lower-case-service-id: true
       routes:
       - id: produtos
           uri: lb://ERP-PRODUTO
           predicates:
           - Method=GET
+
 eureka:
   client:
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://192.168.1.169:8761/eureka}
     register-with-eureka: false
+
 management:
   endpoint:
     health:
