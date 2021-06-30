@@ -18,6 +18,7 @@ eureka:
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://192.168.1.169:8761/eureka}
     register-with-eureka: true
+    fetchRegistry: true
 
 management:
   endpoint:
