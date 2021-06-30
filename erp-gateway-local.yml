@@ -7,9 +7,6 @@ spring:
       discovery:
         locator:
           enabled: true
-    discovery:
-      reactive:
-        enabled: true
       routes:
       - id: produtos
           uri: lb://ERP-PRODUTO
@@ -22,6 +19,8 @@ eureka:
       defaultZone: ${EUREKA_URI:http://192.168.1.169:8761/eureka}
     register-with-eureka: true
     fetchRegistry: true
+    instance:
+      preferIpAddress: true
 
 management:
   endpoint:
