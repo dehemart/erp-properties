@@ -27,6 +27,9 @@ management:
     refresh:
       enabled: true
       show-details: always
+    gateway:
+      enabled: true
+      show-details: always
   endpoints:
     jmx:
       exposure:
@@ -38,3 +41,4 @@ management:
     cors:
       allowed-origins: true
     enabled-by-default: true
+
